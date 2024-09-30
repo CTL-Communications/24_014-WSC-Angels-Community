@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>screen 3</title>
+    <style>
+      body {
+        margin: 0px;
+      }
+
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .thumbnail {
+        width: 900px;
+        margin: 25px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+      }
+
+
+
+      .mainContent {
+        padding-top: 5%;
+      }
+
+    
+    </style>
+  </head>
+  <body>
+    <div class="mainContent">    
+    <div class="flex-container">
+      <div class="col" id="video1Button">
+        <img src="./Assets/24_060_Boehringer PF Journey_video thumbnail.png" class="thumbnail" onclick="video1(event)" />
+      </div>
+      <div class="col" id="video2Button"><img src="./Assets/ipf_ppf_disease_background_video thumbnail.png" class="thumbnail" onclick="video2(event)"/></div>
+      <div class="col" id="video3Button"><img src="./Assets/Ways to live to the fullest with IPF Terry tells us how_video thumbnail.png" class="thumbnail" onclick="video3(event)"/></div>
+      <div class="col" id="video4Button"><img src="./Assets/Ron tells us how he lives better with IPF_video thumbnail.png" class="thumbnail" onclick="video4(event)"/></div>
+    </div>
+    <div class="secondaryCopy">    <span class="greenCopy">Find out how</span> patients' lives are impacted by pulmonary fibrosis</div></div>
+
+
+  </div>
+  <script src="analytics.js"></script>
+  </body>
+  <script>
+
+    function video1(target) {
+      window.location.href = "./Video1.html";
+    }
+
+    function video2(target) {
+      window.location.href = "./Video2.html";
+    }
+
+    function video3(target) {
+      window.location.href = "./Video3.html";
+    }
+
+    function video4(target) {
+      window.location.href = "./Video4.html";
+    }
+
+    timer = setTimeout(redirectUser, 1 * 60 * 1000);
+
+    function redirectUser() {
+      window.location.href = "video.html";
+    }
+  </script>
+</html>
