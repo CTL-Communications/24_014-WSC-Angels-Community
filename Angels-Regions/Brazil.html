@@ -7,16 +7,25 @@
     <title>Angels Regions Brazil</title>
   </head>
   <style>
-    .header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    body {
+      overflow: hidden;
       background-image: url("../Assets/bg-home.svg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
+      height: 100vh;
+    }
+
+    .header {
+      display: flex;
+      position: absolute;
+      z-index: 1;
+      top: 13%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       height: 20vh;
     }
+
     #story1 {
       position: absolute;
       width: 50vh;
@@ -50,6 +59,9 @@
     }
   </style>
   <body>
+    <a href="../Angels-Regions/Flags.html">
+      <img src="../Assets/back.png" />
+    </a>
     <div class="header">
       <img
         src="../Assets/ANGELS LOGO_RGB.png"
