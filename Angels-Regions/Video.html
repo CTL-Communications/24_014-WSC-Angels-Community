@@ -6,32 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Angels Regions</title>
     <style>
-      html {
-        height: 1024px;
+      body {
         overflow: hidden;
-        padding: 0px;
-        margin: 0px;
       }
 
-      video {
+      .videoContainer {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .videoContainer video {
         position: absolute;
         top: 50%;
         left: 50%;
         min-width: 100%;
         min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: -1; /* Send video to back */
-        transform: translate(-50%, -50%); /* Center the video */
+        transform: translate(-50%, -50%);
       }
     </style>
   </head>
   <body>
-    <video autoplay loop muted height: 1024px; onclick="screen1Nav(event)" >
-    <source src="../Assets/angels_regions_1.mp4" type="video/mp4" />
-
-    <script src="analytics.js"></script>
+    <div class="videoContainer">
+      <video autoplay loop muted onclick="screen1Nav(event)" >
+      <source src="../Assets/angels_regions_1.mp4" type="video/mp4" />
+    </div>
   </body>
+  <script src="analytics.js"></script>
   <script>
     function screen1Nav(target) {
       window.location.href = "../Angels-Regions/Flags.html";
