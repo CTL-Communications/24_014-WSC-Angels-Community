@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospitals Leading Change Pakistan</title>
+  </head>
+  <style>
+    body {
+      overflow: hidden;
+      background-image: url("../Assets/bg-home.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
+    }
+
+    .header {
+      display: flex;
+      position: absolute;
+      z-index: 1;
+      top: 13%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 20vh;
+    }
+
+    #story1 {
+      position: absolute;
+      width: 50vh;
+      top: 50%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      padding: 10px;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-size: 40px;
+      z-index: 1;
+      color: rgb(116, 191, 67);
+      background-color: rgb(226, 227, 228);
+      height: 300px;
+    }
+
+    #story2 {
+      position: absolute;
+      width: 50vh;
+      top: 50%;
+      left: 70%;
+      transform: translate(-50%, -50%);
+      padding: 10px;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-size: 40px;
+      z-index: 1;
+      color: rgb(116, 191, 67);
+      background-color: rgb(226, 227, 228);
+      height: 300px;
+    }
+  </style>
+  <body>
+    <a href="../Hospitals-Leading-Change/Flags.html">
+      <img src="../Assets/back.png" />
+    </a>
+    <div class="header">
+      <img
+        src="../Assets/ANGELS LOGO_RGB.png"
+        height="300px"
+        style="text-align: center"
+      />
+    </div>
+    <div id="story1">
+      <h1>Angels Cities | Safe Cities for Stroke</h1>
+    </div>
+    <div id="story2">
+      <h1>Sappucia Do Sul | It Takes a City</h1>
+    </div>
+  </body>
+  <script>
+    document.getElementById("story1").onclick = function (event) {
+      window.location.href =
+        "../Angels-Regions/Angels Cities _ Safe Cities For Stroke _ Angels Initiative.html";
+    };
+
+    document.getElementById("story2").onclick = function (event) {
+      window.location.href =
+        "../Angels-Regions/Sapucaia Do Sul _ It Takes A City _ Angels Initiative.html";
+    };
+  </script>
+</html>
