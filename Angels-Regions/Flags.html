@@ -4,10 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>screen 3</title>
+    <title>Angels Regions Flags</title>
     <style>
       body {
-        margin: 0px;
+        overflow: hidden;
+        background-image: url("../Assets/bg-home.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
       }
 
       .flex-container {
@@ -16,64 +21,99 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        text-align: center;
+        height: 100vh;
       }
 
-      .thumbnail {
-        width: 900px;
-        margin: 25px;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
+      .videoContainer {
+        margin: 50px;
+        position: relative;
+        height: 400px;
       }
 
-
-
-      .mainContent {
-        padding-top: 5%;
+      .videoContainer video {
+        display: block;
       }
 
-    
+      .countryOverlay1 {
+        position: absolute;
+        top: 50%;
+        left: 19%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        pointer-events: none;
+        color: white;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 50px;
+      }
+
+      .countryOverlay2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        pointer-events: none;
+        color: white;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 50px;
+      }
+
+      .countryOverlay3 {
+        position: absolute;
+        top: 50%;
+        right: 7%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        pointer-events: none;
+        color: white;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 50px;
+      }
     </style>
   </head>
   <body>
-    <div class="mainContent">    
     <div class="flex-container">
-      <div class="col" id="video1Button">
-        <img src="./Assets/24_060_Boehringer PF Journey_video thumbnail.png" class="thumbnail" onclick="video1(event)" />
+      <div class="videoContainer" id="Brazil">
+        <video autoplay loop muted>
+          <source src="../Assets/Flags/Brazil.mp4" type="video/mp4" />
+        </video>
       </div>
-      <div class="col" id="video2Button"><img src="./Assets/ipf_ppf_disease_background_video thumbnail.png" class="thumbnail" onclick="video2(event)"/></div>
-      <div class="col" id="video3Button"><img src="./Assets/Ways to live to the fullest with IPF Terry tells us how_video thumbnail.png" class="thumbnail" onclick="video3(event)"/></div>
-      <div class="col" id="video4Button"><img src="./Assets/Ron tells us how he lives better with IPF_video thumbnail.png" class="thumbnail" onclick="video4(event)"/></div>
+      <div class="videoContainer" id="Spain">
+        <video autoplay loop muted>
+          <source src="../Assets/Flags/Spain.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="videoContainer" id="Chile">
+        <video autoplay loop muted>
+          <source src="../Assets/Flags/Chile.mp4" type="video/mp4" />
+        </video>
+      </div>
     </div>
-    <div class="secondaryCopy">    <span class="greenCopy">Find out how</span> patients' lives are impacted by pulmonary fibrosis</div></div>
-
-
-  </div>
-  <script src="analytics.js"></script>
+    <div class="countryOverlay1">
+      <h1>BRAZIL</h1>
+    </div>
+    <div class="countryOverlay2">
+      <h1>SPAIN</h1>
+    </div>
+    <div class="countryOverlay3">
+      <h1>CHILE</h1>
+    </div>
   </body>
   <script>
+    document.getElementById("Brazil").onclick = function (event) {
+      window.location.href = "../Angels-Regions/Brazil.html";
+    };
 
-    function video1(target) {
-      window.location.href = "./Video1.html";
-    }
+    document.getElementById("Spain").onclick = function (event) {
+      window.location.href = "../Angels-Regions/Brazil.html";
+    };
 
-    function video2(target) {
-      window.location.href = "./Video2.html";
-    }
-
-    function video3(target) {
-      window.location.href = "./Video3.html";
-    }
-
-    function video4(target) {
-      window.location.href = "./Video4.html";
-    }
-
-    timer = setTimeout(redirectUser, 1 * 60 * 1000);
-
-    function redirectUser() {
-      window.location.href = "video.html";
-    }
+    document.getElementById("Chile").onclick = function (event) {
+      window.location.href =
+        "../Angels-Regions/Dare To Act _ Cimentando Regiones Angels Sudamérica 2024 _ Angels Initiative.html";
+    };
   </script>
 </html>
