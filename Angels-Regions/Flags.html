@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angels Regions Flags</title>
+    <style>
+      body {
+        overflow: hidden;
+        background-image: url("../Assets/bg-home.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+      }
+
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .videoContainer {
+        margin: 50px;
+        position: relative;
+        height: 400px;
+      }
+
+      .videoContainer video {
+        display: block;
+      }
+
+      .countryOverlay1 {
+        position: absolute;
+        top: 50%;
+        left: 19%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        pointer-events: none;
+        color: white;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 50px;
+      }
+
+      .countryOverlay2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        pointer-events: none;
+        color: white;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 50px;
+      }
+
+      .countryOverlay3 {
+        position: absolute;
+        top: 50%;
+        right: 7%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        pointer-events: none;
+        color: white;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="videoContainer" id="Brazil">
+        <video autoplay loop muted>
+          <source src="../Assets/Flags/Brazil.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="videoContainer" id="Spain">
+        <video autoplay loop muted>
+          <source src="../Assets/Flags/Spain.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="videoContainer" id="Chile">
+        <video autoplay loop muted>
+          <source src="../Assets/Flags/Chile.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+    <div class="countryOverlay1">
+      <h1>BRAZIL</h1>
+    </div>
+    <div class="countryOverlay2">
+      <h1>SPAIN</h1>
+    </div>
+    <div class="countryOverlay3">
+      <h1>CHILE</h1>
+    </div>
+  </body>
+  <script>
+    document.getElementById("Brazil").onclick = function (event) {
+      window.location.href = "../Angels-Regions/Brazil.html";
+    };
+
+    document.getElementById("Spain").onclick = function (event) {
+      window.location.href = "../Angels-Regions/Brazil.html";
+    };
+
+    document.getElementById("Chile").onclick = function (event) {
+      window.location.href =
+        "../Angels-Regions/Dare To Act _ Cimentando Regiones Angels Sudamérica 2024 _ Angels Initiative.html";
+    };
+  </script>
+</html>
