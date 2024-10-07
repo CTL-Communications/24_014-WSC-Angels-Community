@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Angels Regions Flags</title>
+    <title>Hospitals Leading Change Flags</title>
     <style>
       body {
         overflow: hidden;
@@ -31,7 +31,8 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 50vh;
+        padding-top: 20vh;
       }
 
       .videoContainer {
@@ -46,8 +47,8 @@
 
       .countryOverlay1 {
         position: absolute;
-        top: 55%;
-        left: 19%;
+        top: 38%;
+        left: 18%;
         transform: translate(-50%, -50%);
         padding: 10px;
         pointer-events: none;
@@ -59,7 +60,7 @@
 
       .countryOverlay2 {
         position: absolute;
-        top: 55%;
+        top: 38%;
         left: 50%;
         transform: translate(-50%, -50%);
         padding: 10px;
@@ -72,8 +73,21 @@
 
       .countryOverlay3 {
         position: absolute;
-        top: 55%;
-        right: 7%;
+        top: 38%;
+        left: 82%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        pointer-events: none;
+        color: white;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 50px;
+      }
+
+      .countryOverlay5 {
+        position: absolute;
+        top: 63%;
+        left: 50%;
         transform: translate(-50%, -50%);
         padding: 10px;
         pointer-events: none;
@@ -85,7 +99,7 @@
     </style>
   </head>
   <body>
-    <a href="../Angels-Regions/Video.html">
+    <a href="../Hospitals-Leading-Change/Video.html">
       <img src="../Assets/back.png" />
     </a>
     <div class="header">
@@ -96,44 +110,60 @@
       />
     </div>
     <div class="flex-container">
-      <div class="videoContainer" id="Brazil">
+      <div class="videoContainer" id="SouthAfrica">
         <video autoplay loop muted>
-          <source src="../Assets/Flags/Brazil.mp4" type="video/mp4" />
+          <source src="../Assets/Flags/South Africa.mp4" type="video/mp4" />
         </video>
       </div>
-      <div class="videoContainer" id="Spain">
+      <div class="videoContainer" id="Philippines">
         <video autoplay loop muted>
-          <source src="../Assets/Flags/Spain.mp4" type="video/mp4" />
+          <source src="../Assets/Flags/Phillipines.mp4" type="video/mp4" />
         </video>
       </div>
-      <div class="videoContainer" id="Chile">
+      <div class="videoContainer" id="Pakistan">
         <video autoplay loop muted>
-          <source src="../Assets/Flags/Chile.mp4" type="video/mp4" />
+          <source src="../Assets/Flags/Pakistan.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="videoContainer" id="India">
+        <video autoplay loop muted>
+          <source src="../Assets/Flags/India.mp4" type="video/mp4" />
+        </video>
+      </div>
         </video>
       </div>
     </div>
     <div class="countryOverlay1">
-      <h1>BRAZIL</h1>
+      <h1>SOUTH AFRICA</h1>
     </div>
     <div class="countryOverlay2">
-      <h1>SPAIN</h1>
+      <h1>PHILIPPINES</h1>
     </div>
     <div class="countryOverlay3">
-      <h1>CHILE</h1>
+      <h1>PAKISTAN</h1>
+    </div>
+    <div class="countryOverlay5">
+      <h1>INDIA</h1>
     </div>
   </body>
   <script>
-    document.getElementById("Brazil").onclick = function (event) {
-      window.location.href = "../Angels-Regions/Brazil.html";
+    document.getElementById("Philippines").onclick = function (event) {
+      window.location.href = "../Hospitals-Leading-Change/Philippines.html";
     };
 
-    document.getElementById("Spain").onclick = function (event) {
-      window.location.href = "../Angels-Regions/Spain.html";
-    };
-
-    document.getElementById("Chile").onclick = function (event) {
+    document.getElementById("SouthAfrica").onclick = function (event) {
       window.location.href =
-        "../Angels-Regions/Dare To Act _ Cimentando Regiones Angels Sudamérica 2024 _ Angels Initiative.html";
+        "../Hospitals-Leading-Change/Brighter Than A Diamond _ Angels Initiative.html";
+    };
+
+    document.getElementById("Pakistan").onclick = function (event) {
+      window.location.href =
+        "../Hospitals-Leading-Change/Pakistan.html";
+    };
+
+    document.getElementById("India").onclick = function (event) {
+      window.location.href =
+        "../Hospitals-Leading-Change/One Patient, One Miracle at a Time _ Angels Initiative.html";
     };
   </script>
 </html>

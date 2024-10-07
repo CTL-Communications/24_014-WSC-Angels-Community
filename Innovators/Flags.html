@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Innovators Flags</title>
+    <style>
+      body {
+        overflow: hidden;
+        background-image: url("../Assets/bg-home.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+      }
+
+      .header {
+        display: flex;
+        position: absolute;
+        z-index: 1;
+        top: 13%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 20vh;
+      }
+
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        padding-top: 20vh;
+      }
+
+      .videoContainer {
+        margin: 50px;
+        position: relative;
+        height: 400px;
+      }
+
+      .videoContainer video {
+        display: block;
+      }
+
+      .countryOverlay1 {
+        position: absolute;
+        top: 38%;
+        left: 18%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        pointer-events: none;
+        color: white;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 50px;
+      }
+
+      .countryOverlay2 {
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        pointer-events: none;
+        color: white;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 50px;
+      }
+
+      .countryOverlay3 {
+        position: absolute;
+        top: 38%;
+        left: 82%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        pointer-events: none;
+        color: white;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 50px;
+      }
+
+      .countryOverlay4 {
+        position: absolute;
+        width: 40%;
+        top: 63%;
+        left: 41%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        pointer-events: none;
+        color: white;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 44px;
+      }
+
+      .countryOverlay5 {
+        position: absolute;
+        top: 63%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        pointer-events: none;
+        color: white;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="../Innovators/Video.html">
+      <img src="../Assets/back.png" />
+    </a>
+    <div class="header">
+      <img
+        src="../Assets/ANGELS LOGO_RGB.png"
+        height="300px"
+        style="text-align: center; justify-content: center; align-items: center"
+      />
+    </div>
+    <div class="flex-container">
+      <div class="videoContainer" id="Italy">
+        <video autoplay loop muted>
+          <source src="../Assets/Flags/Italy.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="videoContainer" id="Eqypt">
+        <video autoplay loop muted>
+          <source src="../Assets/Flags/Egypt.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="videoContainer" id="Colombia">
+        <video autoplay loop muted>
+          <source src="../Assets/Flags/Colombia.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="videoContainer" id="ColombiaArgentine">
+        <video autoplay loop muted>
+          <source
+            src="../Assets/Flags/Colombia and Argentina.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="videoContainer" id="ChileColombiaArgentina">
+        <video autoplay loop muted>
+          <source
+            src="../Assets/Flags/Ecuador, Argentina and Chile .mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+    </div>
+    <div class="countryOverlay1">
+      <h1>ITALY</h1>
+    </div>
+    <div class="countryOverlay2">
+      <h1>EGYPT</h1>
+    </div>
+    <div class="countryOverlay3">
+      <h1>COLOMBIA</h1>
+    </div>
+    <div class="countryOverlay4">
+      <h1>COLOMBIA AND ARGENTINA</h1>
+    </div>
+    <div class="countryOverlay5">
+      <h1>ECUADOR, ARGENTINE AND CHILE</h1>
+    </div>
+  </body>
+  <script>
+    document.getElementById("Italy").onclick = function (event) {
+      window.location.href = "../Innovators/monitorisa-the-italian-job.html";
+    };
+
+    document.getElementById("Eqypt").onclick = function (event) {
+      window.location.href =
+        "../Innovators/Know The Way, Show The Way _ Leadership Drives Change In Beheira _ Angels Initiative.html";
+    };
+
+    document.getElementById("Colombia").onclick = function (event) {
+      window.location.href =
+        "../Innovators/Speaking the Same Language _ Angels Initiative.html";
+    };
+
+    document.getElementById("ColombiaArgentine").onclick = function (event) {
+      window.location.href = "../Innovators/hope-will-&-empathy.html";
+    };
+
+    document.getElementById("ChileColombiaArgentina").onclick = function (
+      event
+    ) {
+      window.location.href =
+        "../Innovators/Angels 2024 South America Mentoring Program _ Angels Initiative.html";
+    };
+  </script>
+</html>
